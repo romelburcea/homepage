@@ -1,12 +1,50 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+
 .olly,
 .pixabay{
     height: 400px;
-    width: 500px;
+    width: 550px;
 }
 
 .git,
 .linked,
 .twitter{
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header-right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    width: 520px;
+    height: 300px;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+
+.header-right h3{
+    font-size: 50px;
+    margin: 0;
+}
+
+.header-right p{
+    font-size: medium;
+}
+
+.pics{
+    display: flex;
+    gap: 10px;
+    padding-left: 350px;
 }
