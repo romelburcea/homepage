@@ -48,3 +48,13 @@ body{
     gap: 10px;
     padding-left: 350px;
 }
+
+.project-pic{
+    width: 250px;
+    height: 250px;
+}
+
+.git-project{
+    width: 20px;
+    height: 20px;
+}
