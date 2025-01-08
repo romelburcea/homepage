@@ -1,29 +1,27 @@
-body{
+/* Default (Desktop) Styles */
+body {
     margin: 0;
     height: 100vh;
-}
-
-
-.olly,
-.pixabay{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .olly, .pixabay {
     height: 400px;
     width: 550px;
-}
-
-.git,
-.linked,
-.twitter{
+  }
+  
+  .git, .linked, .twitter {
     height: 30px;
     width: 30px;
-}
-
-
-.header{
+  }
+  
+  .header {
     display: flex;
     justify-content: center;
-}
-
-.header-right{
+  }
+  
+  .header-right {
     display: flex;
     flex-direction: column;
     padding-left: 8px;
@@ -31,30 +29,136 @@ body{
     height: 300px;
     margin-top: 50px;
     border: 1px solid black;
-}
-
-
-.header-right h3{
+  }
+  
+  .header-right h3 {
     font-size: 50px;
     margin: 0;
-}
-
-.header-right p{
+  }
+  
+  .header-right p {
     font-size: medium;
-}
-
-.pics{
+  }
+  
+  .pics {
     display: flex;
     gap: 10px;
     padding-left: 350px;
-}
-
-.project-pic{
+  }
+  
+  .project-pic {
     width: 250px;
     height: 250px;
-}
-
-.git-project{
+  }
+  
+  .git-project {
     width: 20px;
     height: 20px;
-}
+  }
+  
+  .body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 200px;
+    align-items: center;
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    gap: 30px;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mail, .phonePic {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Tablet Styles */
+  @media (max-width: 1024px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .olly, .pixabay {
+      width: 100%;
+      height: auto;
+    }
+  
+    .header-right {
+      width: 90%;
+      height: auto;
+      margin-top: 20px;
+      padding: 10px;
+    }
+  
+    .pics {
+      justify-content: center;
+      padding-left: 0;
+    }
+  
+    .projects {
+      gap: 50px;
+    }
+  
+    .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+      width: 250px;
+    }
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .header-right h3 {
+      font-size: 30px;
+    }
+  
+    .pics img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .projects {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+      width: 90%;
+    }
+  
+    .footer {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 50px;
+    }
+  }
+  
