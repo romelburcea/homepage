@@ -134,4 +134,76 @@ body {
   gap: 20px;
 }
 
+/* Mobile responsive stuff right here */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .olly, .pixabay {
+    width: 100%;
+    height: auto;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-right {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+  }
+
+  .header-right h3 {
+    font-size: 1.5rem;
+  }
+
+  .header-right p {
+    font-size: 1rem;
+  }
+
+  .pics {
+    justify-content: center;
+    padding: 0;
+    gap: 15px;
+  }
+
+  .projects {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+    width: 100%; 
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .footer-left {
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .email, .phone {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-pics {
+    justify-content: center;
+    gap: 10px;
+  }
+}
 
